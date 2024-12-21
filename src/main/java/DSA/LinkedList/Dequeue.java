@@ -3,10 +3,10 @@ package DSA.LinkedList;
 import DSA.Interfaces.DequeueInterface;
 
 public class Dequeue<T> implements Cloneable, DequeueInterface<T> {
-    LinkedArray<T> list;
+    LinkedList<T> list;
 
     public Dequeue() {
-        list = new LinkedArray<>();
+        list = new LinkedList<>();
     }
 
     public void addFirst(T t) {
@@ -45,7 +45,7 @@ public class Dequeue<T> implements Cloneable, DequeueInterface<T> {
     @Override
     public Object clone() throws CloneNotSupportedException {
         Dequeue<T> clone = (Dequeue<T>) super.clone();
-        clone.list = (LinkedArray<T>) list.clone();
+        clone.list = (LinkedList<T>) list.clone();
         return clone;
     }
 

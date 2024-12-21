@@ -3,10 +3,10 @@ package DSA.LinkedList;
 import DSA.Interfaces.QueueInterface;
 
 public class Queue<T> implements QueueInterface<T> {
-    LinkedArray<T> queue;
+    LinkedList<T> queue;
 
     public Queue() {
-        queue = new LinkedArray<>();
+        queue = new LinkedList<>();
     }
 
     @Override

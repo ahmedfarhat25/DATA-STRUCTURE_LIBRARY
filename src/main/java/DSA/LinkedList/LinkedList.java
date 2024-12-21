@@ -1,12 +1,12 @@
 package DSA.LinkedList;
 
 
-import DSA.Abstract.AbstractLinkedArray;
+import DSA.Abstract.AbstractLinkedList;
 
-public class LinkedArray<T> extends AbstractLinkedArray<T> implements Iterable<T>, Cloneable {
+public class LinkedList<T> extends AbstractLinkedList<T> implements Iterable<T>, Cloneable {
 
 
-    public LinkedArray() {
+    public LinkedList() {
         super(0);
         head = null;
         tail = null;
@@ -29,8 +29,8 @@ public class LinkedArray<T> extends AbstractLinkedArray<T> implements Iterable<T
 
     @SuppressWarnings("unchecked")
     @Override
-    public LinkedArray<T> clone() throws CloneNotSupportedException {
-        LinkedArray<T> list = (LinkedArray<T>) super.clone();
+    public LinkedList<T> clone() throws CloneNotSupportedException {
+        LinkedList<T> list = (LinkedList<T>) super.clone();
         list.clear();
 
         for (T data : this) {

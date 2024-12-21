@@ -4,16 +4,20 @@ import DSA.Interfaces.StackInterface;
 
 public class Stack<T> implements Cloneable, StackInterface<T> {
 
-    private LinkedArray<T> stack;
+    private LinkedList<T> stack;
 
     public Stack() {
-        stack = new LinkedArray<>();
+        stack = new LinkedList<>();
     }
 
     @Override
     public void push(T t) {
         stack.addLast(t);
     }
+    public int size() {
+        return stack.size();
+    }
+
 
     @Override
     public T pop() {

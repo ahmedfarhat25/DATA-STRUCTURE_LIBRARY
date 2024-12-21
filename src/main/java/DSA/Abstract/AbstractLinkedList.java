@@ -5,11 +5,10 @@ import DSA.LinkedList.Node;
 
 import java.util.Iterator;
 
-public abstract class AbstractLinkedArray<T> extends AbstractArray<T> {
+public abstract class AbstractLinkedList<T> extends AbstractArray<T> {
     protected Node<T> head;
     protected Node<T> tail;
-
-    protected AbstractLinkedArray(int size) {
+    protected AbstractLinkedList(int size) {
         super(size);
     }
 
